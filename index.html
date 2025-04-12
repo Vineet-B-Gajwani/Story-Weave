@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryWeave</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="head">
+        <nav>
+            <img src="images/logo.png" alt="logo">
+            <h1>Story Weave</h1>
+            <a href="index.html">Home</a>
+            <a href="MyStories.html">My Stories</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </section>
+
+    <section class="body">
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by title or category..">
+            <button class="search-button">Search</button>
+        </div>
+
+        <h2><a href="read.html">Continue Reading...</a></h2>
+        <div class="cr-grid"></div>
+
+        <h2>Explore Top Stories</h2>
+        <div class="top-stories"></div>
+
+        <h2>Explore Genres:</h2>
+        <div class="genres">
+            <button onclick="filterByGenre('mystery')">Mystery</button> 
+            <button onclick="filterByGenre('sci-fi')">Sci-Fi</button>
+            <button onclick="filterByGenre('romance')">Romance</button>
+            <button onclick="filterByGenre('horror')">Horror</button>       
+        </div>
+    </section>
+   
+    <section class="footer">
+        <div class="footer-content">
+            <p>About Us | Contact Us | Help | Privacy Policy | Terms of Service</p>
+            <p>&copy; StoryWeave 2025</p>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
